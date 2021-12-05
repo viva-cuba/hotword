@@ -23,7 +23,7 @@ def command_viva():
             x = json.loads(rec.Result())
             result = (x['text'])
             print(result)
-            if len(result) > 0:    
+            if len(result) > 3:    
                 writing_to_file = open('C:/..........txt', 'w', encoding='utf-8')# записывает в файл сказанное. ставим свой путь до файла
                 writing_to_file.write(result)
                 writing_to_file.close()
